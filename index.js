@@ -7,8 +7,8 @@ const foldersPath = join(__dirname, 'commands');
 const eventsPath = join(__dirname, 'events');
 const commandFolders = readdirSync(foldersPath);
 const eventFiles = readdirSync(eventsPath).filter(file => file.endsWith('.js'));
-const serviceFilePath = `${mainEntryDir}/StellarSanta_test.service`;
-const configFilePath = `${mainEntryDir}/.private/config_test.json`;
+const serviceFilePath = `${mainEntryDir}/StellarSanta.service`;
+const configFilePath = `${mainEntryDir}/.private/config.json`;
 const osUsername = userInfo().username;
 createDir(`${mainEntryDir}/.logs`);
 createDir(`${mainEntryDir}/.private`);
@@ -51,8 +51,12 @@ const configContent = {
 	botInviteLink: `https://discord.com/oauth2/authorize?client_id=<botId>&permissions=8&integration_type=0&scope=bot`
 };
 createFile(serviceFilePath, serviceContent);
-createFile(configFilePath, JSON.stringify(configContent, null, 2));
+createFile(configFilePath, JSON.stringify(configContent, null, 4));
 const configFile = require('./.private/config.json');
+if (configFile.botId === '<botId>') {
+	console.log(`Follow the rest of the instructions in README.md`);
+	process.exit(0);
+}
 const { Client, Collection, IntentsBitField, Partials } = require('discord.js');
 const _partials = [
 	Partials["User"],
@@ -130,6 +134,7 @@ function createDir(directoryPath) {
 		mkdirSync(directoryPath, { recursive: true }, (error) => {
 			if (error) {
 				console.error('Error creating directory:', error);
+				process.exit(1);
 			}
 		});
 	}
@@ -140,6 +145,7 @@ function createFile(filePath, content) {
 		writeFileSync(filePath, content, (error) => {
 			if (error) {
 				console.error('Error creating file:', error);
+				process.exit(1);
 			}
 		});
 	}

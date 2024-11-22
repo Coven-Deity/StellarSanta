@@ -5,10 +5,7 @@ StellarSanta Discord bot.
 git clone https://github.com/Coven-Deity/StellarSanta.git
 ```
 ```
-mkdir .logs
-```
-```
-mkdir .private
+cd ./StellarSanta
 ```
 ```
 npm install --save cron
@@ -16,16 +13,22 @@ npm install --save cron
 ```
 npm install --save discord.js
 ```
+```
+npm install --save discord.js
+```
+```
+node index.js
+```
 
 ## Discord Developer Portal Instructions
 **Create a new application**:
   - Go to [Discord Developer Portal](https://discord.com/developers/applications).
   - Click `New Application` and follow the prompts.
-    - Copy the `APPLICATION ID` to the config.json file as "botId"
-    - Set `PUBLIC KEY` to the config.json as "botPublickey"
+    - Copy the `APPLICATION ID` to the `.private/config.json` file as "botId"
+    - Set `PUBLIC KEY` to the `.private/config.json` as "botPublickey"
   - Select `Bot` on the left sidebar.
   - Reset Token:
-    - Copy the token to `config.json` as "botToken".
+    - Copy the token to `.private/config.json` as "botToken".
   - Enable Intents:
     - PRESENCE INTENT
     - SERVER MEMBERS INTENT
@@ -33,7 +36,7 @@ npm install --save discord.js
   - Select `OAuth2` on the left sidebar.
     - select `bot` checkbox
     - select `Administrator` in the bottom section
-    - Copy the `GENERATED URL` to config.json as "invitelink"
+    - Copy the `GENERATED URL` to `.private/config.json` as "invitelink"
   - Close the [Discord Developer Portal]
   - Invite the bot to your server using the link you copied.
 
