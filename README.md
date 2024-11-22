@@ -17,19 +17,6 @@ npm install --save cron
 npm install --save discord.js
 ```
 
-Create `config.json` in the .private directory and populate with
-```
-{
-    "botId": "<botId>",
-    "botOwnerId": "<your Discord Id>",
-    "botBaseGuildId": "<guild Id of the bot's main server>",
-    "botName": "<what you called the bot on the discord developer portal>",
-    "botPublicKey": "<botPublicKey>",
-    "botToken": "<botToken>",
-    "botInviteLink": "https://discord.com/oauth2/authorize?client_id=<botId>&permissions=8&integration_type=0&scope=bot"
-}
-```
-
 ## Discord Developer Portal Instructions
 **Create a new application**:
   - Go to [Discord Developer Portal](https://discord.com/developers/applications).
