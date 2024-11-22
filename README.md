@@ -37,7 +37,7 @@ node index.js
     - Copy the `GENERATED URL` to `.private/config.json` as "botInviteLink"
   - Close the [Discord Developer Portal]
   - Invite the bot to your server using the link you copied.
-
+### You can follow the instructions in the StellarSanta.service file to install the bot as a systemd service
 ## Updating
 ```
 git add --all
