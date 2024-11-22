@@ -14,18 +14,16 @@ npm install --save cron
 npm install --save discord.js
 ```
 ```
-npm install --save discord.js
-```
-```
 node index.js
 ```
-
+- Copy your `Discord ID` to the `.private/config.json` file as "botOwnerId"
+- Copy your `Discord Server ID` to the `.private/config.json` file as "botBaseGuildId"
 ## Discord Developer Portal Instructions
 **Create a new application**:
   - Go to [Discord Developer Portal](https://discord.com/developers/applications).
   - Click `New Application` and follow the prompts.
     - Copy the `APPLICATION ID` to the `.private/config.json` file as "botId"
-    - Set `PUBLIC KEY` to the `.private/config.json` as "botPublickey"
+    - Set `PUBLIC KEY` to the `.private/config.json` as "botPublicKey"
   - Select `Bot` on the left sidebar.
   - Reset Token:
     - Copy the token to `.private/config.json` as "botToken".
@@ -36,7 +34,7 @@ node index.js
   - Select `OAuth2` on the left sidebar.
     - select `bot` checkbox
     - select `Administrator` in the bottom section
-    - Copy the `GENERATED URL` to `.private/config.json` as "invitelink"
+    - Copy the `GENERATED URL` to `.private/config.json` as "botInviteLink"
   - Close the [Discord Developer Portal]
   - Invite the bot to your server using the link you copied.
 

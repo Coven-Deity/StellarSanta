@@ -42,9 +42,9 @@ StandardError=append:${mainEntryDir}/.logs/service_error.log
 WantedBy=multi-user.target
 `;
 const configContent = {
-	botId: '<botId>',
 	botOwnerId: '<botOwnerID>',
 	botBaseGuildId: '<botBaseGuildId>',
+	botId: '<botId>',
 	botName: "StellarSanta",
 	botPublicKey: '<botPublicKey>',
 	botToken: '<botToken>',
