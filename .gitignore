@@ -128,3 +128,11 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Drone specific
+.logs/
+.private/
+node_modules/
+StellarSanta.service
+package-lock.json
+package.json
