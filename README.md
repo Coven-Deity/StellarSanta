@@ -1,5 +1,5 @@
-# StellarSanta
-StellarSanta Discord bot.
+# StellarSanta (note: incomplete, still in developement)
+StellarSanta is a Stellar lumens and other Stellar assets tipping bot for Discord.
 
 ```
 git clone https://github.com/Coven-Deity/StellarSanta.git
@@ -60,4 +60,19 @@ Ubuntu 22.04
 - cron 3.2.1
 - discord.js 14.16.3
 # References
-- https://github.com/stellar/js-stellar-sdk
+- Stellar Developer Docs
+```
+https://developers.stellar.org
+```
+- js-stellar-sdk
+```
+https://github.com/stellar/js-stellar-sdk
+```
+- js-stellar-sdk DOCS
+```
+https://stellar.github.io/js-stellar-sdk/
+```
+- Stellar Developers Discord server
+```
+https://discord.com/invite/stellardev
+```
