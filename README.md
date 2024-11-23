@@ -14,6 +14,9 @@ npm install --save cron
 npm install --save discord.js
 ```
 ```
+npm install --save @stellar/stellar-sdk
+```
+```
 node index.js
 ```
 - Copy your `Discord ID` to the `.private/config.json` file as "botOwnerId"
@@ -49,3 +52,12 @@ git commit --message "brief concise description of the commit"
 ```
 git push origin main
 ```
+# Tested on
+Ubuntu 22.04
+- node v20.17.0
+- npm 10.8.2
+- @stellar/stellar-sdk 13.0.0
+- cron 3.2.1
+- discord.js 14.16.3
+# References
+- https://github.com/stellar/js-stellar-sdk
